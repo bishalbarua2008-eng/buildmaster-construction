@@ -1152,10 +1152,15 @@ img{
 
     .services-grid,
     .projects-grid,
-    .team-grid,
-    .counter-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+    .team-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.counter-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
 
 }
 
@@ -1255,5 +1260,12 @@ img{
     .page-banner{
         padding:120px 15px 60px;
     }
+    .services-grid,
+.projects-grid,
+.team-grid,
+.counter-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
 
 }
