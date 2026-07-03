@@ -794,3 +794,64 @@ background:#ff6b00;
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(255,140,0,.35);
 }
+/* ===========================
+   HERO STATS
+=========================== */
+
+.hero-stats{
+
+display:flex;
+
+gap:25px;
+
+margin-top:45px;
+
+flex-wrap:wrap;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(10px);
+
+padding:22px;
+
+border-radius:14px;
+
+min-width:170px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.15);
+
+transition:.35s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,140,0,.18);
+
+}
+
+.stat-box h2{
+
+font-size:34px;
+
+color:#ff8c00;
+
+margin-bottom:8px;
+
+}
+
+.stat-box span{
+
+color:white;
+
+font-size:15px;
+
+}
