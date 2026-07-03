@@ -1066,3 +1066,22 @@ transform:translateY(0px);
     }
 
 }
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .logo span{
+        font-size:24px;
+    }
+
+    .quote-btn{
+        padding:12px 24px;
+    }
+
+}
