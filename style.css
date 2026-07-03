@@ -1020,8 +1020,7 @@ transform:translateY(0px);
         gap:18px;
     }
 
-}
-/* ==========================
+}/* ==========================
    MOBILE (768px)
 ========================== */
 
@@ -1084,4 +1083,39 @@ transform:translateY(0px);
         padding:12px 24px;
     }
 
+}
+/* ==========================
+   MOBILE MENU
+========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#0b1d3a;
+        margin-top:20px;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+    .quote-btn{
+        display:none;
+    }
 }
