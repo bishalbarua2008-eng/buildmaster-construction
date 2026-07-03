@@ -1085,39 +1085,52 @@ transform:translateY(0px);
 
 }
 /* ==========================
-   MOBILE MENU
+   PROFESSIONAL MOBILE MENU
 ========================== */
 
 .menu-toggle{
     display:none;
-    font-size:28px;
+    font-size:30px;
     color:#fff;
     cursor:pointer;
 }
 
 @media (max-width:768px){
 
+    .navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        height:75px;
+    }
+
     .menu-toggle{
         display:block;
     }
 
-    .nav-menu{
+    .quote-btn{
         display:none;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:75px;
+        left:0;
         width:100%;
-        flex-direction:column;
         background:#0b1d3a;
-        margin-top:20px;
-        padding:20px;
-        border-radius:10px;
+        display:none;
+        flex-direction:column;
+        padding:20px 0;
+        text-align:center;
+        gap:18px;
+        border-top:1px solid rgba(255,255,255,.1);
     }
 
     .nav-menu.active{
         display:flex;
     }
 
-    .quote-btn{
-        display:none;
-    }
 }
 /* ==========================
    COMPLETE MOBILE FIX
