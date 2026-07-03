@@ -1119,3 +1119,141 @@ transform:translateY(0px);
         display:none;
     }
 }
+/* ==========================
+   COMPLETE MOBILE FIX
+========================== */
+
+html{
+    overflow-x:hidden;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .about-container,
+    .contact-container,
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .features-box{
+        flex-direction:column;
+    }
+
+    .services-grid,
+    .projects-grid,
+    .team-grid,
+    .counter-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        height:auto;
+        padding:20px 0;
+    }
+
+    .nav-menu{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .quote-btn{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:120px 0 70px;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:220px;
+        text-align:center;
+    }
+
+    .hero-stats{
+        justify-content:center;
+    }
+
+    .about-list{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid,
+    .projects-grid,
+    .team-grid,
+    .counter-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .page-banner h1{
+        font-size:34px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .about-content h2,
+    .contact-info h2{
+        font-size:30px;
+    }
+
+}
+
+/* Small Phone */
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:30px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .page-banner{
+        padding:120px 15px 60px;
+    }
+
+}
