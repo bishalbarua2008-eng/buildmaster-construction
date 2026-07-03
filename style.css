@@ -28,15 +28,26 @@ body{
     top:0;
     left:0;
     width:100%;
-    background:#0b1d3a;
-    z-index:1000;
-}
+    z-index:9999;
 
+    background:rgba(11,29,58,.75);
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
 .navbar{
-    height:80px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
 }
 
 .logo{
@@ -60,24 +71,43 @@ body{
 }
 
 .nav-menu a{
-    color:#fff;
-    text-decoration:none;
-    transition:.3s;
-}
 
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+font-size:16px;
+
+transition:.35s;
+
+position:relative;
+
+}
 .nav-menu a:hover{
-    color:#ff8c00;
+
+color:#ff8c00;
+
 }
 
 .quote-btn{
-    background:#ff8c00;
-    color:#fff;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:6px;
-    font-weight:600;
-}
 
+background:#ff8c00;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+color:white;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
 /* ==========================
    HERO
 ========================== */
@@ -759,4 +789,8 @@ background:#ff6b00;
 .contact-form button{
     border:none;
     cursor:pointer;
+}
+.quote-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(255,140,0,.35);
 }
